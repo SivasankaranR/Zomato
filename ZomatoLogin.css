@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    font-family: 'Poppins';font-size: 22px;
+}
+.layout{
+    background: linear-gradient(150deg,#fa474b,#f13c4b,#dd254b);
+    max-width: 1366px;
+    height: 100vh; 
+}
+.border{
+    border: 2px solid white;
+    height: 600px;
+    width: 1340px;
+    position: absolute;
+    margin: 10px 10px 10px 10px;
+}
+img[class="backlayer"]{
+    opacity: .5;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    height: 600px;
+    width: 1350px;
+    position: absolute;
+}
+.image3 img{
+    height: 80px;
+    border: 1px solid white;
+    padding: 0px 30px 0px 30px ;
+    margin: 30px 15px;
+}
+.image3{
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: end;
+    width: 1350px;
+    position: absolute;
+}
+.image2{
+    background-image: url(./pexels-daniel-reche-3616956.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .5;
+    height: 100vh;
+    width: 1351px;
+    background-position: right;
+    position: absolute;
+    animation: fadeIn 5s;  
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}  
+    100%{opacity: .5;}
+}
+.image4{
+    background-image: url(./burger.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .8;
+    height: 100vh;
+    width: 1351px;
+    background-position: right;
+    position: absolute;
+    animation: fadeIn 10s;  
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}  
+    100%{opacity: .;}
+}
+.image1{
+    background-image: url(./pexels-rajesh-tp-1624487.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+    height: 100vh;
+    width: 1366px;
+    background-position: left;
+    position: absolute;
+}
+.main{
+    display: flex; 
+    align-items: center ;
+    height: 100vh;
+}
+.doubleshadow{
+    position: relative;
+    margin: 15%;
+}
+.maincontainer{
+ /* background-color: purple; */
+    border: 9px solid white;
+    border-radius: 50px;
+    box-shadow: inset 4px 4px 10px 2px rgba(0, 0, 0, 0.5);
+    height: 550px;
+    width: 270px;
+    background: linear-gradient(140deg,#fa474b,#f9464c);
+    position: absolute;
+    z-index: 1;
+}
+.container{
+    /* background-color: blue; */
+    border: 9px solid white;
+    border-radius: 50px;
+    box-shadow: inset 4px 4px 10px 2px rgba(0, 0, 0, 0.5);
+    height: 550px;
+    width: 270px;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+.containerclone{
+    /* background-color: greenyellow; */
+    border: 9px solid white;
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.5);
+    height: 550px;
+    width: 270px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    
+}
+.innercontainer{
+    /* background-color: greenyellow; */
+    margin: 10px 10px 10px;
+    height: 530px;
+    border-radius: 30px; 
+}
+.top{
+    padding: 8px;
+    height: 10px;
+    border: none;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+    width: 40px;
+    /* background-color: red; */
+}
+.circle div{
+    border: .5px solid white;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+}
+.circle div[class="round"]{
+    background-color: white;
+}
+.top div[class="time"]{
+    height: 20px;
+    width: 60px;
+    /* background-color: red; */
+    margin-left: 50px;          
+}
+.clockStyle{    
+    font-size:10px;
+    color: white;
+    font-width:bold;
+    text-align: center;
+    margin-top: 2.5px;
+}
+.top div[class="battery"]{
+    height: 20px;           
+    width: 30px;
+    /* background-color: orange; */
+    margin-left: 40px;    
+} 
+.battery{
+    display: flex;
+    justify-content: end;
+}
+.batterycontainer{
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+.batterycontainer div[class="batper"]{
+    margin: auto;
+    font-size: x-small;
+    color: white;
+    
+}  
+.image{
+    display: flex;
+    height: 20px;
+    width: 22px;
+    /* background-color: red; */
+    justify-content: end;
+}
+.image img{
+    background-position: right; 
+    height:20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+}
+.zomato{
+    height: 100px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zomato .logo img{
+    height: 70px;
+    filter: brightness(0) invert(1);
+}
+.background{
+    border: none;
+    background-color: white;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    height: 290px;
+    border-radius: 15px;
+    margin: 0px 8px 0px;
+    padding: 20px 30px 20px;
+}
+.background .background1{
+    border:none;
+    /* background-color: red ; */
+    height: 270px;  
+    border-radius: 15px;
+    margin: 0px 8px 0px;
+}
+.head{
+    border: none;
+    /* background-color: aqua; */
+    height: 20px;
+    margin: 0px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.head .signin button{
+    border: none;
+    background: transparent;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    color: #dd254b;
+}
+.head .signup button{
+    border: none;
+    background: transparent;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    color: #b7b7b7;
+}   
+.signin:visited {
+    color: #dd254b;    
+}
+input[class="placetext"]{
+    height: 28px;
+    width: 70%;
+    border-radius: 5px;
+    padding-left: 40px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    outline: 0;
+}
+[placeholder]:focus::-webkit-input-placeholder{
+    transition: text-indent 0.5s 0.5s ease;
+    text-indent: -100%;
+}
+.placetext{
+    font-size: 12px;    
+}
+input::placeholder{
+    opacity: .5;
+}   
+input:hover{
+    border: 2px solid rgba(0, 0, 0, .4);
+}
+input:focus{
+    border-color: #b11e4a;
+    border-width: 2px;
+}
+
+#contentbox{
+    /* background-color: blue; */
+    height: 210px;
+}
+#contentbox1{
+    /* background-color: blue; */
+    height: 210px;
+    display: none;
+}
+.fname{
+    /* background-color: red; */
+    border: none;
+    height: 40px;
+    position: relative;   
+}
+.email{
+    /* background-color: palevioletred; */
+    border: none;
+    height: 40px;
+    position: relative;   
+}
+.email1{
+    /* background-color: palevioletred; */
+    border: none;
+    height: 40px;
+    position: relative;   
+}
+.password{
+    /* background-color: yellow; */
+    border: none;
+    height: 50px;
+    position: relative;
+}
+.password1{
+    /* background-color: yellow; */
+    border: none;
+    height: 40px;
+    position: relative;
+}
+.user i[class="fas fa-user"]{
+    position: absolute;
+    text-align: center;
+    font-size: x-small;
+    margin: 15px;
+    height: 10px;
+    /* background-color: aqua; */
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: .5;
+}
+.envelope i[class="fas fa-envelope"]{
+    position: absolute;
+    text-align: center;
+    font-size: x-small;
+    margin: 15px;
+    height: 10px;
+    /* background-color: aqua; */
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: .5;
+}
+.lock i[class="fas fa-lock"]{
+    position: absolute;
+    text-align: center;
+    font-size: x-small;
+    margin: 15px;
+    height: 10px;
+    /* background-color: aqua; */
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: .5;
+}
+.login div{
+    /* background-color: greenyellow; */
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login1 div{
+    /* background-color: greenyellow; */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sgn1{
+    box-shadow: 1px 4px 10px 4px rgba(0, 0, 0, 0.2);
+}
+.sgn{
+    box-shadow: 1px 4px 10px 4px rgba(0, 0, 0, 0.2);
+}
+.fb{
+    box-shadow: 1px 4px 10px 4px rgba(0, 0, 0, 0.2);
+}
+div .fb{
+    /* background-color: red; */
+    height: 30px;
+}
+div .fp{
+    font-size: x-small;
+    text-decoration: none;
+    text-align: center;
+}
+div .fp:hover{
+    text-decoration: underline;
+}
+div .fb1{
+    /* background-color: red; */
+    height: 30px;
+}
+.sgn a{
+    color: white;
+    text-decoration: none;
+}
+.fb a{
+    color: white;
+    text-decoration: none;
+}
+.sgn1 a{
+    color: white;
+    text-decoration: none;
+}
+
+button[class="sgn"] {
+    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg,#fa474b,#f9464c,#d0154a);
+}
+div p[class="text"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+    height: 20px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+}
+button[class="fb"]{
+    font-size: 10px;
+    color: white;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #3b5999;
+}
+button[class="sgn1"] {
+    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg,#fa474b,#f9464c,#d0154a);
+}
+}
+div p[class="text1"]{
+    /* background-color: pink; */
+    height: 40px;
+    width: 100%;
+    font-size: 8px;
+    font-weight: bold;
+}
+div button[class="fb1"]{
+    font-size: 10px;
+    color: white;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #3b5999;
+}
+div a[class="fp"]{
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #d0154a;
+}
+.pages{
+    display: flex;
+}
+.pages .front{
+    position: relative;
+}   
+.pages .back{
+    width: 153px;
+    position: absolute;
+}
+.checkbox{
+    height: 15px;
+    display: flex;
+    align-items: center;
+}
+.eupdate{
+    font-size: 8px;
+    text-align: center;
+    margin-left: 5px;
+}
+.account{
+    font-size: 9px;
+    text-align: start;
+    margin-left: 5px;
+    margin-top: 45px;
+}
+input[class="update"]{
+    margin: 0px 0px 0px 4px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 10px;
+    text-align: start;
+}
+div a{
+    font-size: 9px;
+    width: 100%;
+    text-decoration: underline;
+    color: #d0154a;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./ZomatoLogin.css">
+    <script src="./ZomatoLogin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <!-- <div class="image1"></div> -->
+        <!-- <img class="backlayer" src="./Zomato.png" alt=""> -->
+        <div class="image2"></div>
+        <div class="image3"><img src="./Zomato.png" alt=""></div>
+        <!-- <div class="image4"></div> -->
+        <div class="border"></div>
+        <section class="main">
+<div class="doubleshadow">
+    <div class="maincontainer"></div>
+    <div class="container"> 
+        <section class="innercontainer">
+        <section class="top">
+            <div class="circle">
+                <div class="round"></div>
+                <div class="round"></div>
+                <div class="round"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="time"><div id="clockDisplay" class="clockStyle"></div></div>
+            <div class="battery">
+                <div class="batterycontainer"><div class="batper">42%</div></div>
+            </div>
+            <div class="image"><img src="./battery.png" alt=""></div>  
+        </section>
+        <div class="zomato"><div class="logo"><img src="./Zomato.png" alt=""></div></div>
+        <section class="background">
+            <div class="background1">
+            <form action="#">
+            <div class="head">
+                    <div class="signin"><button onclick="myFunction1()" id="signin">Sign In</button></div>
+                    <div class="signup"><button onclick="myFunction()" id="signup">Sign up</button></div>
+            </div>
+            <div class="pages">
+    <div class="front">
+        <div  id="contentbox" >
+            <div class="email">
+                <input class="placetext" type="text" placeholder="Email">
+                <div class="user"><i class="fas fa-user"></i></div>
+            </div>
+            <div class="password">
+                <input class="placetext" type="password" placeholder="Password">
+                <div class="lock"><i class="fas fa-lock"></i></div>
+            </div>
+            <div class="login">
+                <div for="signin"><button  class="sgn" id="signin"><a href="" for="signin">Sign In</a></button></div>
+                <div><p class="text">OR</p></div> 
+                <button class="fb"><a href="">Sign In with Facebook</a></button>
+                <div><a href="" class="fp">Forgot Password?</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <div  id="contentbox1">
+            <div class="fname">
+                <input class="placetext" type="text" placeholder="Full name">
+                <div class="user"><i class="fas fa-user"></i></div>
+            </div>
+            <div class="email1">
+                <input class="placetext" type="text" placeholder="Email address">
+                <div class="envelope"><i class="fas fa-envelope"></i></div>
+            </div>
+            <div class="password1">
+                <input class="placetext" type="password" placeholder="Password">
+                <div class="lock"><i class="fas fa-lock"></i></div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="update" id="update">
+                <label for="update" class="eupdate">Send occasional email updates </label>
+            </div>
+            <div class="login1">
+                <button class="sgn1" ><a href="#" >Register</a></button>
+            </div>
+            <div class="checkbox">
+                <label class="account" for="account">By creating your account, you agree to Zomato's 
+                    <a href=""> Terms of Service</a>
+                    <a href=""> Cookies Policy</a>
+                    <a href=""> Privacy Policy</a>and
+                    <a href=""> Content Policies</a>.
+                </label>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+    </div>
+</form>
+</div>
+    <div class="containerclone"></div>
+            </section>
+        </section>
+    </div>
+</div>
+</section>
+</div>
+<!-- <script>
+    $(document).on('click', 'button', handleClick)
+    
+    function handleClick() {
+    
+    
+    const id = $(this).data('id');
+    
+   
+    $('.contentbox').removeClass('show');
+    `
+
+    $(`.contentbox[data-id=${id}]`).addClass('show');
+    }
+    </script> -->
+    <script>
+        function renderTime(){
+        var currentTime = new Date();
+        var diem = "AM";
+        var h = currentTime.getHours();
+        var m = currentTime.getMinutes();
+        var s = currentTime.getSeconds();
+        
+          
+        if(h == 0){
+          h = 12;
+        }else if(h > 12){
+          h = h - 12;
+          diem = "PM"
+        }
+        if(h < 10){
+          h = h;
+        }
+        if(m < 10){
+          m = "0" + m;
+        }
+        if(s < 10){
+          s = "0" + s;
+        }
+        var myClock = document.getElementById('clockDisplay');
+        myClock.textContent = h + ":" + m + diem;
+        setTimeout('renderTime()', 1000); 
+      }
+      renderTime();
+        </script>
+</body>
+</html>
